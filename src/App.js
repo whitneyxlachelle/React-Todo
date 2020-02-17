@@ -57,11 +57,11 @@ class App extends React.Component {
   };
 
   clearCompleted = () => {
-    //console.log("clearCompleted");
+    console.log("clearCompleted");
     this.setState({
-      tasks: this.state.tasks.filter(item => {
-        return !item.completed;
-      })
+      tasks: this.state.tasks.filter(item => 
+       (item.completed === false)
+      )
     });
   };
 
